@@ -1,0 +1,41 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilados
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Configuración temporal
+*.log
+*.vsidx
+*.vshost.*
+*.dbmdl
+
+# Archivos de paquetes
+packages/
+*.nupkg
+
+# Archivos de dependencias locales
+*.lock.json
+
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Archivos de Guna UI (no los temporales, solo binarios generados)
+Guna_UI_Framework_Ultimate_v2.0.0.1/**/bin/
+Guna_UI_Framework_Ultimate_v2.0.0.1/**/obj/
