@@ -1,0 +1,84 @@
+======================================
+TUTORIAL RÁPIDO DE GITHUB
+======================================
+
+1️⃣ Conceptos Básicos
+--------------------
+GitHub es una plataforma en la nube para alojar proyectos que usan Git, un sistema de control de versiones. 
+Permite guardar todos los cambios de tu proyecto y trabajar en equipo sin perder información.
+
+- Repositorio: Carpeta en GitHub que guarda tu proyecto y su historial.
+- Control de versiones: Guarda cada cambio, permite volver atrás y ver quién modificó qué.
+
+--------------------------------------
+2️⃣ Instalación y Configuración
+--------------------------------------
+1. Instalar Git: https://git-scm.com/
+2. Configurar tu usuario:
+   git config --global user.name "TuNombre"
+   git config --global user.email "tuemail@ejemplo.com"
+
+--------------------------------------
+3️⃣ Flujo Básico de Trabajo
+--------------------------------------
+# Inicializar repo en tu carpeta local
+git init
+
+# Ver estado de los archivos
+git status
+
+# Agregar archivos al commit
+git add .
+
+# Crear un commit
+git commit -m "Mensaje descriptivo"
+
+# Conectar con repositorio remoto
+git remote add origin URL_DEL_REPO
+
+# Subir cambios al repositorio remoto
+git push -u origin main
+
+--------------------------------------
+4️⃣ Crear un Repositorio en GitHub
+--------------------------------------
+1. Ir a https://github.com/ -> New Repository
+2. Darle un nombre y copiar la URL
+3. Conectar desde la terminal:
+   git remote add origin URL
+   git branch -M main
+   git push -u origin main
+
+--------------------------------------
+5️⃣ Trabajar en Equipo
+--------------------------------------
+# Clonar un repo existente
+git clone URL
+
+# Descargar cambios nuevos
+git pull
+
+# Crear una rama nueva
+git checkout -b nueva-rama
+
+# Subir cambios de la rama
+git push origin nueva-rama
+
+--------------------------------------
+6️⃣ Buenas Prácticas
+--------------------------------------
+✅ Hacer commits pequeños y claros.
+✅ Usar ramas para nuevas funciones o correcciones.
+✅ Hacer git pull antes de git push.
+✅ Usar archivo .gitignore para excluir archivos innecesarios.
+
+--------------------------------------
+7️⃣ Próximos pasos
+--------------------------------------
+- Aprender Pull Requests.
+- Usar Issues y Projects para gestión de tareas.
+- Probar GitHub Desktop para interfaz gráfica.
+
+--------------------------------------
+Fin del tutorial
+======================================
