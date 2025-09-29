@@ -1,4 +1,5 @@
-﻿using Sistema.UI.Modulos;
+﻿using Sistema.UI.FormularioBase;
+using Sistema.UI.Modulos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sistema.UI.FormularioBase;
+using static Sistema.UI.Modulos.ColoresUI;
 
 namespace Sistema.UI.Formularios
 {

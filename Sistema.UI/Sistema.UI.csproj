@@ -68,11 +68,29 @@
     <Compile Include="FormularioBase\frmPlantilla.Designer.cs">
       <DependentUpon>frmPlantilla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConexion.Designer.cs">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmMensajes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmMensajes.Designer.cs">
       <DependentUpon>frmMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MDIInterfazMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MDIInterfazMenu.Designer.cs">
+      <DependentUpon>MDIInterfazMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\MDIMenu.cs">
       <SubType>Form</SubType>
@@ -80,14 +98,24 @@
     <Compile Include="Formularios\MDIMenu.Designer.cs">
       <DependentUpon>MDIMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\ColoresUI.cs" />
     <Compile Include="Modulos\Mensajes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioBase\frmPlantilla.resx">
       <DependentUpon>frmPlantilla.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConexion.resx">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMensajes.resx">
       <DependentUpon>frmMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MDIInterfazMenu.resx">
+      <DependentUpon>MDIInterfazMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIMenu.resx">
       <DependentUpon>MDIMenu.cs</DependentUpon>
@@ -121,6 +149,10 @@
     <ProjectReference Include="..\Sistema.BLL\Sistema.BLL.csproj">
       <Project>{7239daf1-79cc-4346-8419-a78a2f618338}</Project>
       <Name>Sistema.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sistema.DAL\Sistema.DAL.csproj">
+      <Project>{10558bc9-37ae-41a8-932e-6470a38fc0dc}</Project>
+      <Name>Sistema.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sistema.Entity\Sistema.Entity.csproj">
       <Project>{47a90104-fad3-4689-b2b9-87aabb75e41e}</Project>
@@ -159,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_salida_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_user_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celularicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-08-28 at 9.12.10 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

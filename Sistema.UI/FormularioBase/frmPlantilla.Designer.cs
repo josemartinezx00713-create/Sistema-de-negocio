@@ -56,7 +56,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(45)))), ((int)(((byte)(65)))));
             this.panel1.Controls.Add(this.iconCerrar);
             this.panel1.Controls.Add(this.txtBuscar);
             this.panel1.Controls.Add(this.iconEditar);

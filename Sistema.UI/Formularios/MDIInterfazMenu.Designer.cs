@@ -1,0 +1,687 @@
+﻿namespace Sistema.UI.Formularios
+{
+    partial class MDIInterfazMenu
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCompras = new FontAwesome.Sharp.IconButton();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
+            this.btnReportes = new FontAwesome.Sharp.IconButton();
+            this.btnVentas = new FontAwesome.Sharp.IconButton();
+            this.btnInicio = new FontAwesome.Sharp.IconButton();
+            this.panelCentral = new System.Windows.Forms.Panel();
+            this.toolMenu = new System.Windows.Forms.ToolStrip();
+            this.iconVentas = new FontAwesome.Sharp.IconDropDownButton();
+            this.aperturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cerrarCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historialDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cierreDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconCatalogo = new FontAwesome.Sharp.IconDropDownButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.listadoDeCategoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.listadoDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.listadoDeGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconInventario = new FontAwesome.Sharp.IconDropDownButton();
+            this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.egresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.kardexDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconReportes = new FontAwesome.Sharp.IconDropDownButton();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconSeguridad = new FontAwesome.Sharp.IconDropDownButton();
+            this.administradorDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.editarDatosDeLaEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.conexiónALaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupDeLaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iconSalir = new FontAwesome.Sharp.IconToolStripButton();
+            this.panelMenuSuperior = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new FontAwesome.Sharp.IconDropDownButton();
+            this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panelMenuLateral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelCentral.SuspendLayout();
+            this.toolMenu.SuspendLayout();
+            this.panelMenuSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMenuLateral
+            // 
+            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(45)))), ((int)(((byte)(65)))));
+            this.panelMenuLateral.Controls.Add(this.pictureBox2);
+            this.panelMenuLateral.Controls.Add(this.btnCompras);
+            this.panelMenuLateral.Controls.Add(this.btnSalir);
+            this.panelMenuLateral.Controls.Add(this.btnReportes);
+            this.panelMenuLateral.Controls.Add(this.btnVentas);
+            this.panelMenuLateral.Controls.Add(this.btnInicio);
+            this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuLateral.Name = "panelMenuLateral";
+            this.panelMenuLateral.Size = new System.Drawing.Size(271, 594);
+            this.panelMenuLateral.TabIndex = 4;
+            this.panelMenuLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenuLateral_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Image = global::Sistema.UI.Properties.Resources.WhatsApp_Image_2025_08_28_at_9_12_10_AM;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(271, 228);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnCompras
+            // 
+            this.btnCompras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompras.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompras.ForeColor = System.Drawing.Color.White;
+            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
+            this.btnCompras.IconColor = System.Drawing.Color.White;
+            this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompras.IconSize = 30;
+            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompras.Location = new System.Drawing.Point(0, 339);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(268, 54);
+            this.btnCompras.TabIndex = 4;
+            this.btnCompras.Text = "Compras";
+            this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCompras.UseVisualStyleBackColor = true;
+            this.btnCompras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCompras_MouseDown);
+            this.btnCompras.MouseEnter += new System.EventHandler(this.btnCompras_MouseEnter);
+            this.btnCompras.MouseLeave += new System.EventHandler(this.btnCompras_MouseLeave);
+            this.btnCompras.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnCompras_MouseUp);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.CircleXmark;
+            this.btnSalir.IconColor = System.Drawing.Color.White;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 30;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(0, 459);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(268, 54);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSalir_MouseDown);
+            this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
+            this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
+            this.btnSalir.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSalir_MouseUp);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
+            this.btnReportes.IconColor = System.Drawing.Color.White;
+            this.btnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReportes.IconSize = 30;
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.Location = new System.Drawing.Point(0, 399);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(268, 54);
+            this.btnReportes.TabIndex = 2;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnReportes_MouseDown);
+            this.btnReportes.MouseEnter += new System.EventHandler(this.btnReportes_MouseEnter);
+            this.btnReportes.MouseLeave += new System.EventHandler(this.btnReportes_MouseLeave);
+            this.btnReportes.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnReportes_MouseUp);
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVentas.FlatAppearance.BorderSize = 0;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
+            this.btnVentas.IconColor = System.Drawing.Color.White;
+            this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVentas.IconSize = 30;
+            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVentas.Location = new System.Drawing.Point(0, 279);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(268, 54);
+            this.btnVentas.TabIndex = 1;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            this.btnVentas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnVentas_MouseDown);
+            this.btnVentas.MouseEnter += new System.EventHandler(this.btnVentas_MouseEnter);
+            this.btnVentas.MouseLeave += new System.EventHandler(this.btnVentas_MouseLeave);
+            this.btnVentas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnVentas_MouseUp);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            this.btnInicio.IconColor = System.Drawing.Color.White;
+            this.btnInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInicio.IconSize = 30;
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(0, 224);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(268, 54);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnInicio_MouseDown);
+            this.btnInicio.MouseEnter += new System.EventHandler(this.btnInicio_MouseEnter);
+            this.btnInicio.MouseLeave += new System.EventHandler(this.btnInicio_MouseLeave);
+            this.btnInicio.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnInicio_MouseUp);
+            // 
+            // panelCentral
+            // 
+            this.panelCentral.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelCentral.Controls.Add(this.toolMenu);
+            this.panelCentral.Controls.Add(this.panelMenuSuperior);
+            this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentral.Location = new System.Drawing.Point(271, 0);
+            this.panelCentral.Name = "panelCentral";
+            this.panelCentral.Size = new System.Drawing.Size(727, 594);
+            this.panelCentral.TabIndex = 5;
+            // 
+            // toolMenu
+            // 
+            this.toolMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.toolMenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.iconVentas,
+            this.iconCatalogo,
+            this.iconInventario,
+            this.iconReportes,
+            this.iconSeguridad,
+            this.iconSalir});
+            this.toolMenu.Location = new System.Drawing.Point(0, 61);
+            this.toolMenu.Name = "toolMenu";
+            this.toolMenu.Size = new System.Drawing.Size(727, 38);
+            this.toolMenu.TabIndex = 8;
+            this.toolMenu.Text = "toolStrip1";
+            // 
+            // iconVentas
+            // 
+            this.iconVentas.AutoSize = false;
+            this.iconVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aperturaToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.cerrarCajaToolStripMenuItem,
+            this.ventasToolStripMenuItem,
+            this.historialDeVentasToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.cierreDeCajaToolStripMenuItem});
+            this.iconVentas.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconVentas.IconChar = FontAwesome.Sharp.IconChar.DollyFlatbed;
+            this.iconVentas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconVentas.IconSize = 30;
+            this.iconVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconVentas.Name = "iconVentas";
+            this.iconVentas.Size = new System.Drawing.Size(160, 35);
+            this.iconVentas.Text = "Ventas";
+            // 
+            // aperturaToolStripMenuItem
+            // 
+            this.aperturaToolStripMenuItem.Name = "aperturaToolStripMenuItem";
+            this.aperturaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.aperturaToolStripMenuItem.Text = "Apertura de caja";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
+            // 
+            // cerrarCajaToolStripMenuItem
+            // 
+            this.cerrarCajaToolStripMenuItem.Name = "cerrarCajaToolStripMenuItem";
+            this.cerrarCajaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.cerrarCajaToolStripMenuItem.Text = "Cerrar caja";
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // historialDeVentasToolStripMenuItem
+            // 
+            this.historialDeVentasToolStripMenuItem.Name = "historialDeVentasToolStripMenuItem";
+            this.historialDeVentasToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.historialDeVentasToolStripMenuItem.Text = "Historial de ventas";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
+            // 
+            // cierreDeCajaToolStripMenuItem
+            // 
+            this.cierreDeCajaToolStripMenuItem.Name = "cierreDeCajaToolStripMenuItem";
+            this.cierreDeCajaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.cierreDeCajaToolStripMenuItem.Text = "Cierre de caja";
+            // 
+            // iconCatalogo
+            // 
+            this.iconCatalogo.AutoSize = false;
+            this.iconCatalogo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator3,
+            this.listadoDeCategoríasToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.listadoDeProductosToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.listadoDeGastosToolStripMenuItem});
+            this.iconCatalogo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconCatalogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconCatalogo.IconChar = FontAwesome.Sharp.IconChar.Folder;
+            this.iconCatalogo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconCatalogo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCatalogo.IconSize = 30;
+            this.iconCatalogo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconCatalogo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconCatalogo.Name = "iconCatalogo";
+            this.iconCatalogo.Size = new System.Drawing.Size(160, 35);
+            this.iconCatalogo.Text = "Catálogo";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(218, 6);
+            // 
+            // listadoDeCategoríasToolStripMenuItem
+            // 
+            this.listadoDeCategoríasToolStripMenuItem.Name = "listadoDeCategoríasToolStripMenuItem";
+            this.listadoDeCategoríasToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
+            this.listadoDeCategoríasToolStripMenuItem.Text = "Listado de categorías";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(218, 6);
+            // 
+            // listadoDeProductosToolStripMenuItem
+            // 
+            this.listadoDeProductosToolStripMenuItem.Name = "listadoDeProductosToolStripMenuItem";
+            this.listadoDeProductosToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
+            this.listadoDeProductosToolStripMenuItem.Text = "Listado de productos";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(218, 6);
+            // 
+            // listadoDeGastosToolStripMenuItem
+            // 
+            this.listadoDeGastosToolStripMenuItem.Name = "listadoDeGastosToolStripMenuItem";
+            this.listadoDeGastosToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
+            this.listadoDeGastosToolStripMenuItem.Text = "Listado de Gastos";
+            // 
+            // iconInventario
+            // 
+            this.iconInventario.AutoSize = false;
+            this.iconInventario.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresosToolStripMenuItem,
+            this.egresosToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.kardexDeProductosToolStripMenuItem});
+            this.iconInventario.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconInventario.IconChar = FontAwesome.Sharp.IconChar.TruckRampBox;
+            this.iconInventario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconInventario.IconSize = 30;
+            this.iconInventario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconInventario.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconInventario.Name = "iconInventario";
+            this.iconInventario.Size = new System.Drawing.Size(160, 35);
+            this.iconInventario.Text = "Movimientos";
+            // 
+            // ingresosToolStripMenuItem
+            // 
+            this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
+            this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.ingresosToolStripMenuItem.Text = "Ingresos";
+            // 
+            // egresosToolStripMenuItem
+            // 
+            this.egresosToolStripMenuItem.Name = "egresosToolStripMenuItem";
+            this.egresosToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.egresosToolStripMenuItem.Text = "Egresos";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(217, 6);
+            // 
+            // kardexDeProductosToolStripMenuItem
+            // 
+            this.kardexDeProductosToolStripMenuItem.Name = "kardexDeProductosToolStripMenuItem";
+            this.kardexDeProductosToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.kardexDeProductosToolStripMenuItem.Text = "Kardex de productos";
+            // 
+            // iconReportes
+            // 
+            this.iconReportes.AutoSize = false;
+            this.iconReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2});
+            this.iconReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconReportes.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
+            this.iconReportes.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconReportes.IconSize = 30;
+            this.iconReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconReportes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconReportes.Name = "iconReportes";
+            this.iconReportes.Size = new System.Drawing.Size(160, 35);
+            this.iconReportes.Text = "Reportes";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(188, 24);
+            this.toolStripMenuItem2.Text = "Generar reporte";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // iconSeguridad
+            // 
+            this.iconSeguridad.AutoSize = false;
+            this.iconSeguridad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administradorDeUsuariosToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.editarDatosDeLaEmpresaToolStripMenuItem,
+            this.toolStripSeparator9,
+            this.conexiónALaBaseDeDatosToolStripMenuItem,
+            this.backupDeLaBaseDeDatosToolStripMenuItem});
+            this.iconSeguridad.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconSeguridad.IconChar = FontAwesome.Sharp.IconChar.Key;
+            this.iconSeguridad.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSeguridad.IconSize = 30;
+            this.iconSeguridad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconSeguridad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconSeguridad.Name = "iconSeguridad";
+            this.iconSeguridad.Size = new System.Drawing.Size(160, 35);
+            this.iconSeguridad.Text = "Seguridad";
+            // 
+            // administradorDeUsuariosToolStripMenuItem
+            // 
+            this.administradorDeUsuariosToolStripMenuItem.Name = "administradorDeUsuariosToolStripMenuItem";
+            this.administradorDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
+            this.administradorDeUsuariosToolStripMenuItem.Text = "Administrador de usuarios";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(265, 6);
+            // 
+            // editarDatosDeLaEmpresaToolStripMenuItem
+            // 
+            this.editarDatosDeLaEmpresaToolStripMenuItem.Name = "editarDatosDeLaEmpresaToolStripMenuItem";
+            this.editarDatosDeLaEmpresaToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
+            this.editarDatosDeLaEmpresaToolStripMenuItem.Text = "Editar datos de la empresa";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(265, 6);
+            // 
+            // conexiónALaBaseDeDatosToolStripMenuItem
+            // 
+            this.conexiónALaBaseDeDatosToolStripMenuItem.Name = "conexiónALaBaseDeDatosToolStripMenuItem";
+            this.conexiónALaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
+            this.conexiónALaBaseDeDatosToolStripMenuItem.Text = "Conexión a la base de datos";
+            // 
+            // backupDeLaBaseDeDatosToolStripMenuItem
+            // 
+            this.backupDeLaBaseDeDatosToolStripMenuItem.Name = "backupDeLaBaseDeDatosToolStripMenuItem";
+            this.backupDeLaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
+            this.backupDeLaBaseDeDatosToolStripMenuItem.Text = "Backup de la base de datos";
+            // 
+            // iconSalir
+            // 
+            this.iconSalir.AutoSize = false;
+            this.iconSalir.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconSalir.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.iconSalir.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconSalir.IconSize = 30;
+            this.iconSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconSalir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconSalir.Name = "iconSalir";
+            this.iconSalir.Size = new System.Drawing.Size(160, 35);
+            this.iconSalir.Text = "Cerrar sesión";
+            this.iconSalir.Click += new System.EventHandler(this.iconSalir_Click);
+            // 
+            // panelMenuSuperior
+            // 
+            this.panelMenuSuperior.BackColor = System.Drawing.Color.White;
+            this.panelMenuSuperior.Controls.Add(this.pictureBox1);
+            this.panelMenuSuperior.Controls.Add(this.label1);
+            this.panelMenuSuperior.Controls.Add(this.toolStrip1);
+            this.panelMenuSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenuSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuSuperior.Name = "panelMenuSuperior";
+            this.panelMenuSuperior.Size = new System.Drawing.Size(727, 61);
+            this.panelMenuSuperior.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Sistema.UI.Properties.Resources.celularicon;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DR CELL";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip1.Size = new System.Drawing.Size(727, 61);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.AutoSize = false;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajustesToolStripMenuItem,
+            this.cerrarSesiónToolStripMenuItem});
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.toolStripButton1.IconColor = System.Drawing.Color.Black;
+            this.toolStripButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.toolStripButton1.IconSize = 40;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(50, 50);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // ajustesToolStripMenuItem
+            // 
+            this.ajustesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
+            this.ajustesToolStripMenuItem.Text = "Ajustes";
+            // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 50;
+            // 
+            // MDIInterfazMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(998, 594);
+            this.Controls.Add(this.panelCentral);
+            this.Controls.Add(this.panelMenuLateral);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IsMdiContainer = true;
+            this.Name = "MDIInterfazMenu";
+            this.Text = "MDIInterfazMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MDIInterfazMenu_FormClosing);
+            this.Load += new System.EventHandler(this.MDIInterfazMenu_Load);
+            this.panelMenuLateral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelCentral.ResumeLayout(false);
+            this.panelCentral.PerformLayout();
+            this.toolMenu.ResumeLayout(false);
+            this.toolMenu.PerformLayout();
+            this.panelMenuSuperior.ResumeLayout(false);
+            this.panelMenuSuperior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+        #endregion
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Panel panelMenuLateral;
+        private System.Windows.Forms.Panel panelCentral;
+        private System.Windows.Forms.Panel panelMenuSuperior;
+        private FontAwesome.Sharp.IconButton btnInicio;
+        private FontAwesome.Sharp.IconButton btnCompras;
+        private FontAwesome.Sharp.IconButton btnSalir;
+        private FontAwesome.Sharp.IconButton btnReportes;
+        private FontAwesome.Sharp.IconButton btnVentas;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private FontAwesome.Sharp.IconDropDownButton toolStripButton1;
+        private System.Windows.Forms.ToolStripMenuItem ajustesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolMenu;
+        private FontAwesome.Sharp.IconDropDownButton iconVentas;
+        private System.Windows.Forms.ToolStripMenuItem aperturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem cerrarCajaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historialDeVentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem cierreDeCajaToolStripMenuItem;
+        private FontAwesome.Sharp.IconDropDownButton iconCatalogo;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeCategoríasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeProductosToolStripMenuItem;
+        private FontAwesome.Sharp.IconDropDownButton iconInventario;
+        private System.Windows.Forms.ToolStripMenuItem ingresosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem egresosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem kardexDeProductosToolStripMenuItem;
+        private FontAwesome.Sharp.IconDropDownButton iconReportes;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private FontAwesome.Sharp.IconDropDownButton iconSeguridad;
+        private System.Windows.Forms.ToolStripMenuItem administradorDeUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripMenuItem editarDatosDeLaEmpresaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem conexiónALaBaseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupDeLaBaseDeDatosToolStripMenuItem;
+        private FontAwesome.Sharp.IconToolStripButton iconSalir;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem listadoDeGastosToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+    }
+}
+
+
+

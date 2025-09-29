@@ -1,84 +1,217 @@
 ======================================
-TUTORIAL RÁPIDO DE GITHUB
-======================================
+TUTORIAL COMPLETO DE GITHUB
+===========================
 
-1️⃣ Conceptos Básicos
---------------------
-GitHub es una plataforma en la nube para alojar proyectos que usan Git, un sistema de control de versiones. 
-Permite guardar todos los cambios de tu proyecto y trabajar en equipo sin perder información.
+## 1️⃣ Conceptos Básicos
 
-- Repositorio: Carpeta en GitHub que guarda tu proyecto y su historial.
-- Control de versiones: Guarda cada cambio, permite volver atrás y ver quién modificó qué.
+GitHub es una plataforma en la nube que permite alojar y colaborar en proyectos usando Git, un sistema de control de versiones distribuido.
+Con Git y GitHub puedes:
 
---------------------------------------
-2️⃣ Instalación y Configuración
---------------------------------------
-1. Instalar Git: https://git-scm.com/
-2. Configurar tu usuario:
+* Guardar un historial de todos los cambios de tu proyecto.
+* Trabajar en equipo sin perder información.
+* Volver a versiones anteriores si algo falla.
+* Revisar quién hizo cada cambio y cuándo.
+
+Términos importantes:
+
+* Repositorio (repo): Carpeta que contiene tu proyecto y su historial.
+* Commit: Punto de guardado con un mensaje descriptivo.
+* Branch (rama): Versión paralela de tu proyecto para nuevas funciones o pruebas.
+* Remote (remoto): Repositorio en GitHub conectado a tu proyecto local.
+* Pull Request: Solicitud para fusionar cambios de una rama a otra, común en trabajo en equipo.
+
+---
+
+## 2️⃣ Instalación y Configuración
+
+1. Instalar Git: [https://git-scm.com/](https://git-scm.com/)
+2. Configurar tu usuario (solo la primera vez):
    git config --global user.name "TuNombre"
-   git config --global user.email "tuemail@ejemplo.com"
+   git config --global user.email "[tuemail@ejemplo.com](mailto:tuemail@ejemplo.com)"
+3. Ver configuración:
+   git config --list
 
---------------------------------------
-3️⃣ Flujo Básico de Trabajo
---------------------------------------
+---
+
+## 3️⃣ Flujo Básico de Trabajo Local
+
 # Inicializar repo en tu carpeta local
+
 git init
 
 # Ver estado de los archivos
+
 git status
 
-# Agregar archivos al commit
-git add .
+# Agregar archivos para preparar commit
 
-# Crear un commit
+git add archivo.txt       # Agrega un archivo específico
+git add .                 # Agrega todos los archivos modificados
+
+# Crear un commit (guardar cambios)
+
 git commit -m "Mensaje descriptivo"
 
-# Conectar con repositorio remoto
+# Ver historial de commits
+
+git log                   # Lista todos los commits
+git log --oneline         # Versión resumida
+
+# Deshacer cambios no guardados
+
+git restore archivo.txt   # Deshace cambios en un archivo
+git restore .             # Deshace todos los cambios no guardados
+
+# Volver a un commit anterior (cuidado, puede perder cambios)
+
+git checkout <commit_id> archivo.txt  # Solo un archivo
+git reset --hard <commit_id>          # Todo el repo
+
+---
+
+## 4️⃣ Trabajar con Repositorio Remoto (GitHub)
+
+# Conectar repo local a GitHub
+
 git remote add origin URL_DEL_REPO
 
-# Subir cambios al repositorio remoto
-git push -u origin main
+# Ver remotos
 
---------------------------------------
-4️⃣ Crear un Repositorio en GitHub
---------------------------------------
-1. Ir a https://github.com/ -> New Repository
-2. Darle un nombre y copiar la URL
-3. Conectar desde la terminal:
-   git remote add origin URL
-   git branch -M main
-   git push -u origin main
+git remote -v
 
---------------------------------------
-5️⃣ Trabajar en Equipo
---------------------------------------
+# Subir cambios al repo remoto
+
+git push -u origin main    # Primera vez en main
+git push                   # Para commits siguientes
+
+# Descargar cambios desde remoto
+
+git fetch                  # Trae cambios sin fusionar
+git pull                   # Trae y fusiona cambios automáticamente
+
 # Clonar un repo existente
-git clone URL
 
-# Descargar cambios nuevos
-git pull
+git clone URL_DEL_REPO
 
-# Crear una rama nueva
+# Cambiar URL de un remoto
+
+git remote set-url origin NUEVA_URL
+
+---
+
+## 5️⃣ Ramas (Branches) y Trabajo en Equipo
+
+# Crear y cambiar a una nueva rama
+
 git checkout -b nueva-rama
 
-# Subir cambios de la rama
-git push origin nueva-rama
+# Cambiar a otra rama existente
 
---------------------------------------
-6️⃣ Buenas Prácticas
---------------------------------------
+git checkout nombre-rama
+
+# Listar todas las ramas
+
+git branch
+
+# Fusionar cambios de otra rama a la actual
+
+git merge nombre-rama
+
+# Subir rama al remoto
+
+git push origin nombre-rama
+
+# Traer cambios de una rama remota
+
+git pull origin nombre-rama
+
+# Eliminar ramas
+
+git branch -d nombre-rama       # Local
+git push origin --delete nombre-rama  # Remoto
+
+---
+
+## 6️⃣ Conflictos y Resoluciones
+
+Cuando dos personas modifican la misma línea de un archivo:
+
+1. Git marca conflicto al hacer merge o pull.
+2. Edita el archivo para elegir qué versión mantener.
+3. Marcar como resuelto:
+   git add archivo.txt
+   git commit -m "Resolviendo conflicto"
+
+# Ver conflictos sin fusionar
+
+git status
+
+---
+
+## 7️⃣ Etiquetas (Tags) y Versiones
+
+# Crear un tag
+
+git tag v1.0
+
+# Crear un tag anotado
+
+git tag -a v1.0 -m "Versión inicial"
+
+# Subir tags al remoto
+
+git push origin v1.0
+git push --tags   # Subir todos los tags
+
+# Ver tags existentes
+
+git tag
+
+---
+
+## 8️⃣ Otras Herramientas Útiles
+
+# Ignorar archivos (no subir al repo)
+
+Crear archivo .gitignore y añadir nombres o patrones de archivos
+
+# Revertir un commit (sin borrar historial)
+
+git revert <commit_id>
+
+# Resetear repo a estado anterior
+
+git reset --hard <commit_id>   # Elimina commits posteriores
+
+# Ver diferencias entre commits o archivos
+
+git diff
+git diff archivo.txt
+
+---
+
+## 9️⃣ Buenas Prácticas
+
 ✅ Hacer commits pequeños y claros.
 ✅ Usar ramas para nuevas funciones o correcciones.
 ✅ Hacer git pull antes de git push.
-✅ Usar archivo .gitignore para excluir archivos innecesarios.
+✅ Revisar conflictos antes de fusionar ramas.
+✅ Mantener .gitignore actualizado.
+✅ Escribir mensajes de commit descriptivos.
+✅ Usar Pull Requests para revisar cambios en equipo.
+✅ Mantener tu rama main limpia, fusionando solo cambios estables.
 
---------------------------------------
-7️⃣ Próximos pasos
---------------------------------------
-- Aprender Pull Requests.
-- Usar Issues y Projects para gestión de tareas.
-- Probar GitHub Desktop para interfaz gráfica.
+---
 
---------------------------------------
-Fin del tutorial
-======================================
+## 🔟 Próximos pasos
+
+* Aprender Pull Requests y revisiones de código.
+* Usar Issues y Projects para gestión de tareas.
+* Explorar GitHub Actions para automatizaciones.
+* Probar GitHub Desktop para interfaz gráfica.
+* Aprender flujos avanzados: rebase, stash, cherry-pick.
+* Explorar GitHub Pages para publicar proyectos estáticos.
+
+---
+
+# Fin del tutorial extendido
