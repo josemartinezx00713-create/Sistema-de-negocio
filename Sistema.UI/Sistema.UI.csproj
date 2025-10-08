@@ -62,11 +62,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormularioBase\frmAgregarPlantilla.cs">
+    <Compile Include="FormularioBase\frmAgregarRegistros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioBase\frmAgregarPlantilla.Designer.cs">
-      <DependentUpon>frmAgregarPlantilla.cs</DependentUpon>
+    <Compile Include="FormularioBase\frmAgregarRegistros.Designer.cs">
+      <DependentUpon>frmAgregarRegistros.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioBase\frmPlantilla.cs">
       <SubType>Form</SubType>
@@ -79,12 +79,6 @@
     </Compile>
     <Compile Include="Formularios\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmAgregarGastos.cs">
       <SubType>Form</SubType>
@@ -140,17 +134,14 @@
     <Compile Include="Modulos\Validaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormularioBase\frmAgregarPlantilla.resx">
-      <DependentUpon>frmAgregarPlantilla.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioBase\frmAgregarRegistros.resx">
+      <DependentUpon>frmAgregarRegistros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioBase\frmPlantilla.resx">
       <DependentUpon>frmPlantilla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAgregarGastos.resx">
       <DependentUpon>frmAgregarGastos.cs</DependentUpon>

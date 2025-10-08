@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema.UI.Formularios
+namespace Sistema.UI.FormularioBase
 {
-    public partial class Form1 : Form
+    public partial class frmAgregarRegistros : Form
     {
-        public Form1()
+        public frmAgregarRegistros()
         {
             InitializeComponent();
         }

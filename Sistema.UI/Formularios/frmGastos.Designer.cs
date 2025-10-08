@@ -1,4 +1,4 @@
-﻿namespace Sistema.Formularios
+﻿namespace Sistema.UI.Formularios
 {
     partial class frmGastos
     {

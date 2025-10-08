@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema.Formularios
+namespace Sistema.UI.Formularios
 {
     public partial class frmGastos : Form
     {

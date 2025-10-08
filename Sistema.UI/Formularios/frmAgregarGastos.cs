@@ -15,9 +15,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Guna.UI2.Native.WinApi;
 
-namespace Sistema.Formularios
+namespace Sistema.UI.Formularios
 {
-    public partial class frmAgregarGastos : frmAgregarPlantilla
+    public partial class frmAgregarGastos : frmAgregarRegistros
     {
         private Mensajes mensaje = new Mensajes();
         private Validaciones validaciones = new Validaciones();
@@ -64,7 +64,7 @@ namespace Sistema.Formularios
                 {
                     IdUsuario = 2,
                     Fecha = dtpFecha.Value.Date,
-                    Monto = decimal.Parse(txtMonto.Text.Trim()),
+                    Monto = decimal.Parse(txtVar2.Text.Trim()),
                     IdCuenta = Convert.ToInt32(cboCatalogo.SelectedValue),
                     Descripcion = txtVar4.Text.Trim()
                 };
@@ -91,21 +91,21 @@ namespace Sistema.Formularios
         private void Limpiar()
         {
             dtpFecha.Value = DateTime.Now;
-            txtMonto.Text = "0.00";
+            txtVar2.Text = "0.00";
             if (cboCatalogo.Items.Count > 0) cboCatalogo.SelectedIndex = 0;
             txtVar4.Text = "Ninguna";
-            txtMonto.Focus();
+            txtVar2.Focus();
         }
 
         #endregion
 
         #region Botones de comando
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             errorIcono.Clear();
             bool datosValidos = true;
 
-            foreach (Control control in tableLayoutPanel1.Controls)
+            foreach (Control control in panel1.Controls)
             {
                 if (control is Guna.UI2.WinForms.Guna2TextBox gunaTextBox)
                 {
@@ -134,7 +134,7 @@ namespace Sistema.Formularios
 
             DateTime fecha = dtpFecha.Value.Date;
             DateTime fechaActual = DateTime.Now.Date;
-            decimal.TryParse(txtMonto.Text.Trim(), out decimal monto);
+            decimal.TryParse(txtVar2.Text.Trim(), out decimal monto);
 
             if (fecha > fechaActual)
             {
@@ -145,18 +145,18 @@ namespace Sistema.Formularios
             if (monto <= 0)
             {
                 mensaje.mensajeValidacion("El monto debe ser mayor a cero.");
-                txtMonto.Focus();
+                txtVar2.Focus();
                 return;
             }
 
             Guardar();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             Close();
         }
-    
+      
 
         #endregion
 
@@ -169,22 +169,23 @@ namespace Sistema.Formularios
 
         #endregion
 
-        #region Cajas de texto    
-        private void txtMonto_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-            Validaciones.validarDecimal(sender, e);
-        }
-
-        private void txtMonto_Leave_1(object sender, EventArgs e)
+        #region Cajas de texto   
+        private void txtVar2_Leave(object sender, EventArgs e)
         {
             Validaciones.formatoDecimal((Guna.UI2.WinForms.Guna2TextBox)sender);
         }
+
+        private void txtVar2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validaciones.validarDecimal(sender, e);
+        }
+        
         #endregion
 
         private void frmAgregarGastos_Load_1(object sender, EventArgs e)
         {
             dtpFecha.Value = DateTime.Now;
-            txtMonto.Text = "0.00";
+            txtVar2.Text = "0.00";
             cargarCatalogo();
         }
 
