@@ -1,4 +1,5 @@
-﻿using Sistema.UI.FormularioBase;
+﻿using Sistema.Formularios;
+using Sistema.UI.FormularioBase;
 using Sistema.UI.Modulos;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace Sistema.UI.Formularios
         public static bool confirmarSalida = false;
         private Mensajes mensaje = new Mensajes();
         private Form formularioActivo = null;
+
+        #region Metodos formulario
 
         private void AbrirFormulario(Form formularioHijo, bool esHijoDelPanelContenedor = true)
         {
@@ -71,9 +74,28 @@ namespace Sistema.UI.Formularios
             btnInicio.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonNormal);
             btnInicio.ForeColor = Color.White;
         }
+        private void MDIInterfazMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!confirmarSalida)
+            {
+                if (mensaje.mensajeConfirmar("¿Desea salir del sistema?") == DialogResult.OK)
+                {
+                    confirmarSalida = true;
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        #endregion
+
 
         #region Metodos de botones
         //Boton Inicio
+
         private void btnInicio_MouseEnter(object sender, EventArgs e)
         {
             btnInicio.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
@@ -94,6 +116,7 @@ namespace Sistema.UI.Formularios
         }
 
         //Boton Ventas
+
         private void btnVentas_MouseDown(object sender, MouseEventArgs e)
         {
             btnVentas.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonPressed);
@@ -113,28 +136,9 @@ namespace Sistema.UI.Formularios
             btnVentas.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
         }
 
-        //Boton Compras
-        private void btnCompras_MouseEnter(object sender, EventArgs e)
-        {
-            btnCompras.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
-        }
-
-        private void btnCompras_MouseDown(object sender, MouseEventArgs e)
-        {
-            btnCompras.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonPressed);
-        }
-
-        private void btnCompras_MouseLeave(object sender, EventArgs e)
-        {
-            btnCompras.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonNormal);
-        }
-
-        private void btnCompras_MouseUp(object sender, MouseEventArgs e)
-        {
-            btnCompras.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
-        }
-
+        
         //Boton Reportes
+
         private void btnReportes_MouseEnter(object sender, EventArgs e)
         {
             btnReportes.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
@@ -156,6 +160,7 @@ namespace Sistema.UI.Formularios
         }
 
         //Boton Salir
+
         private void btnSalir_MouseEnter(object sender, EventArgs e)
         {
             btnSalir.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
@@ -175,6 +180,63 @@ namespace Sistema.UI.Formularios
         {
             btnSalir.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonNormal);
         }
+
+        //Boton Productos
+        private void btnProducto_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnProducto.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
+        }
+
+        private void btnProducto_MouseLeave(object sender, EventArgs e)
+        {
+            btnProducto.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonNormal);
+        }
+
+        private void btnProducto_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnProducto.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonPressed);
+        }
+
+        private void btnProducto_MouseEnter(object sender, EventArgs e)
+        {
+            btnProducto.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
+        }
+
+        //Boton Egresos
+
+        private void btnEgreso_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnEgreso.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
+        }
+
+        private void btnEgreso_MouseLeave(object sender, EventArgs e)
+        {
+            btnEgreso.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonNormal);
+        }
+
+        private void btnEgreso_MouseEnter(object sender, EventArgs e)
+        {
+            btnEgreso.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonHover);
+        }
+
+        private void btnEgreso_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEgreso.BackColor = ColoresUII.ObtenerColor(ElementoUI.BotonPressed);
+        }
+
+        //Clics en botones
+        private void iconSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmPlantilla(), true);
+        }
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
         #endregion
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -187,35 +249,30 @@ namespace Sistema.UI.Formularios
 
         }
 
-        private void iconSalir_Click(object sender, EventArgs e)
+        private void administradorDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmUsuarios(), true);
+        }
+
+        private void btnEgreso_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmGastos(), true);
+        }
+
+        private void listadoDeGastosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCatalogoGasto frm = new frmCatalogoGasto();
+            mostrarModal.MostrarConCapaTransparente(this, frm);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void MDIInterfazMenu_FormClosing(object sender, FormClosingEventArgs e)
+        private void egresosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!confirmarSalida)
-            {
-                if (mensaje.mensajeConfirmar("¿Desea salir del sistema?") == DialogResult.OK)
-                {
-                    confirmarSalida = true;
-                    Application.Exit();
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-        }
-
-        private void btnVentas_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new frmPlantilla(), true);
-        }
-
-        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
+            AbrirFormulario(new frmGastos(), true);
         }
     }
 }

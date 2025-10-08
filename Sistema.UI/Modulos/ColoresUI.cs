@@ -30,7 +30,7 @@ namespace Sistema.UI.Modulos
                 switch (tipo)
                 {
                     case ElementoUI.FondoGeneral:
-                        return Color.FromArgb(255, 30, 45, 65); // Azul oscuro del fondo del logo
+                        return Color.FromArgb(255, 44, 62, 80); // Azul oscuro del fondo del logo
 
                     case ElementoUI.PanelLateral:
                         return Color.FromArgb(255, 45, 60, 85); // Un azul-gris ligeramente más claro para el panel lateral
@@ -45,7 +45,8 @@ namespace Sistema.UI.Modulos
                         return Color.FromArgb(255, 60, 75, 100); // Un tono más claro del azul-gris para tarjetas
 
                     case ElementoUI.BotonNormal:
-                        return Color.FromArgb(255, 30, 45, 65); // Azul oscuro para el botón normal
+                        //return Color.FromArgb(255, 30, 45, 65); // Azul oscuro para el botón normal
+                        return Color.FromArgb(255, 44, 62, 80); // Azul oscuro para el botón normal
 
                     case ElementoUI.BotonHover:
                         return Color.FromArgb(255, 200, 120, 0); // Naranja un poco más oscuro para el hover

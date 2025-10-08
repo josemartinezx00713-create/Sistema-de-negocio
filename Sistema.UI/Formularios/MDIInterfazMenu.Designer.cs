@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIInterfazMenu));
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panelMenuLateral = new System.Windows.Forms.Panel();
+            this.btnEgreso = new FontAwesome.Sharp.IconButton();
+            this.btnProducto = new FontAwesome.Sharp.IconButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCompras = new FontAwesome.Sharp.IconButton();
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.btnReportes = new FontAwesome.Sharp.IconButton();
             this.btnVentas = new FontAwesome.Sharp.IconButton();
@@ -70,27 +72,26 @@
             this.backupDeLaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconSalir = new FontAwesome.Sharp.IconToolStripButton();
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new FontAwesome.Sharp.IconDropDownButton();
             this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.kStyleManager1 = new Klik.Windows.Forms.v1.Common.KStyleManager(this.components);
             this.panelMenuLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelCentral.SuspendLayout();
             this.toolMenu.SuspendLayout();
             this.panelMenuSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenuLateral
             // 
-            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(45)))), ((int)(((byte)(65)))));
+            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelMenuLateral.Controls.Add(this.btnEgreso);
+            this.panelMenuLateral.Controls.Add(this.btnProducto);
             this.panelMenuLateral.Controls.Add(this.pictureBox2);
-            this.panelMenuLateral.Controls.Add(this.btnCompras);
             this.panelMenuLateral.Controls.Add(this.btnSalir);
             this.panelMenuLateral.Controls.Add(this.btnReportes);
             this.panelMenuLateral.Controls.Add(this.btnVentas);
@@ -98,48 +99,76 @@
             this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMenuLateral.Name = "panelMenuLateral";
-            this.panelMenuLateral.Size = new System.Drawing.Size(271, 594);
+            this.panelMenuLateral.Size = new System.Drawing.Size(229, 629);
             this.panelMenuLateral.TabIndex = 4;
             this.panelMenuLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenuLateral_Paint);
             // 
+            // btnEgreso
+            // 
+            this.btnEgreso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEgreso.FlatAppearance.BorderSize = 0;
+            this.btnEgreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEgreso.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEgreso.ForeColor = System.Drawing.Color.White;
+            this.btnEgreso.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            this.btnEgreso.IconColor = System.Drawing.Color.White;
+            this.btnEgreso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEgreso.IconSize = 30;
+            this.btnEgreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEgreso.Location = new System.Drawing.Point(0, 421);
+            this.btnEgreso.Name = "btnEgreso";
+            this.btnEgreso.Size = new System.Drawing.Size(226, 54);
+            this.btnEgreso.TabIndex = 11;
+            this.btnEgreso.Text = "      Gasto";
+            this.btnEgreso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEgreso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEgreso.UseVisualStyleBackColor = true;
+            this.btnEgreso.Click += new System.EventHandler(this.btnEgreso_Click);
+            this.btnEgreso.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEgreso_MouseDown);
+            this.btnEgreso.MouseEnter += new System.EventHandler(this.btnEgreso_MouseEnter);
+            this.btnEgreso.MouseLeave += new System.EventHandler(this.btnEgreso_MouseLeave);
+            this.btnEgreso.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnEgreso_MouseUp);
+            // 
+            // btnProducto
+            // 
+            this.btnProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducto.FlatAppearance.BorderSize = 0;
+            this.btnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducto.ForeColor = System.Drawing.Color.White;
+            this.btnProducto.IconChar = FontAwesome.Sharp.IconChar.Box;
+            this.btnProducto.IconColor = System.Drawing.Color.White;
+            this.btnProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProducto.IconSize = 30;
+            this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducto.Location = new System.Drawing.Point(0, 301);
+            this.btnProducto.Name = "btnProducto";
+            this.btnProducto.Size = new System.Drawing.Size(226, 54);
+            this.btnProducto.TabIndex = 10;
+            this.btnProducto.Text = "      Productos";
+            this.btnProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProducto.UseVisualStyleBackColor = true;
+            this.btnProducto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnProducto_MouseDown);
+            this.btnProducto.MouseEnter += new System.EventHandler(this.btnProducto_MouseEnter);
+            this.btnProducto.MouseLeave += new System.EventHandler(this.btnProducto_MouseLeave);
+            this.btnProducto.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnProducto_MouseUp);
+            // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = global::Sistema.UI.Properties.Resources.WhatsApp_Image_2025_08_28_at_9_12_10_AM;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(271, 228);
+            this.pictureBox2.Size = new System.Drawing.Size(229, 234);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // btnCompras
-            // 
-            this.btnCompras.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCompras.FlatAppearance.BorderSize = 0;
-            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompras.ForeColor = System.Drawing.Color.White;
-            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
-            this.btnCompras.IconColor = System.Drawing.Color.White;
-            this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompras.IconSize = 30;
-            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompras.Location = new System.Drawing.Point(0, 339);
-            this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Size = new System.Drawing.Size(268, 54);
-            this.btnCompras.TabIndex = 4;
-            this.btnCompras.Text = "Compras";
-            this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCompras.UseVisualStyleBackColor = true;
-            this.btnCompras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCompras_MouseDown);
-            this.btnCompras.MouseEnter += new System.EventHandler(this.btnCompras_MouseEnter);
-            this.btnCompras.MouseLeave += new System.EventHandler(this.btnCompras_MouseLeave);
-            this.btnCompras.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnCompras_MouseUp);
-            // 
             // btnSalir
             // 
-            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,13 +178,15 @@
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(0, 459);
+            this.btnSalir.Location = new System.Drawing.Point(0, 541);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(268, 54);
+            this.btnSalir.Size = new System.Drawing.Size(226, 54);
             this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "      Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             this.btnSalir.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSalir_MouseDown);
             this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
             this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
@@ -163,7 +194,7 @@
             // 
             // btnReportes
             // 
-            this.btnReportes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReportes.FlatAppearance.BorderSize = 0;
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,11 +204,12 @@
             this.btnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReportes.IconSize = 30;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 399);
+            this.btnReportes.Location = new System.Drawing.Point(0, 481);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(268, 54);
+            this.btnReportes.Size = new System.Drawing.Size(226, 54);
             this.btnReportes.TabIndex = 2;
-            this.btnReportes.Text = "Reportes";
+            this.btnReportes.Text = "      Reportes";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnReportes_MouseDown);
@@ -187,7 +219,7 @@
             // 
             // btnVentas
             // 
-            this.btnVentas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVentas.FlatAppearance.BorderSize = 0;
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,11 +229,12 @@
             this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVentas.IconSize = 30;
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(0, 279);
+            this.btnVentas.Location = new System.Drawing.Point(0, 361);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(268, 54);
+            this.btnVentas.Size = new System.Drawing.Size(226, 54);
             this.btnVentas.TabIndex = 1;
-            this.btnVentas.Text = "Ventas";
+            this.btnVentas.Text = "      Ventas";
+            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVentas.UseVisualStyleBackColor = true;
             this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
@@ -212,7 +245,7 @@
             // 
             // btnInicio
             // 
-            this.btnInicio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,11 +255,12 @@
             this.btnInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInicio.IconSize = 30;
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Location = new System.Drawing.Point(0, 224);
+            this.btnInicio.Location = new System.Drawing.Point(0, 241);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(268, 54);
+            this.btnInicio.Size = new System.Drawing.Size(226, 54);
             this.btnInicio.TabIndex = 0;
-            this.btnInicio.Text = "Inicio";
+            this.btnInicio.Text = "      Inicio";
+            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInicio.UseVisualStyleBackColor = true;
             this.btnInicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnInicio_MouseDown);
@@ -240,15 +274,16 @@
             this.panelCentral.Controls.Add(this.toolMenu);
             this.panelCentral.Controls.Add(this.panelMenuSuperior);
             this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentral.Location = new System.Drawing.Point(271, 0);
+            this.panelCentral.Location = new System.Drawing.Point(229, 0);
             this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(727, 594);
+            this.panelCentral.Size = new System.Drawing.Size(1037, 629);
             this.panelCentral.TabIndex = 5;
             // 
             // toolMenu
             // 
             this.toolMenu.BackColor = System.Drawing.SystemColors.Control;
             this.toolMenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iconVentas,
             this.iconCatalogo,
@@ -256,9 +291,9 @@
             this.iconReportes,
             this.iconSeguridad,
             this.iconSalir});
-            this.toolMenu.Location = new System.Drawing.Point(0, 61);
+            this.toolMenu.Location = new System.Drawing.Point(0, 42);
             this.toolMenu.Name = "toolMenu";
-            this.toolMenu.Size = new System.Drawing.Size(727, 38);
+            this.toolMenu.Size = new System.Drawing.Size(1037, 38);
             this.toolMenu.TabIndex = 8;
             this.toolMenu.Text = "toolStrip1";
             // 
@@ -378,7 +413,8 @@
             // 
             this.listadoDeGastosToolStripMenuItem.Name = "listadoDeGastosToolStripMenuItem";
             this.listadoDeGastosToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
-            this.listadoDeGastosToolStripMenuItem.Text = "Listado de Gastos";
+            this.listadoDeGastosToolStripMenuItem.Text = "Listado de gastos";
+            this.listadoDeGastosToolStripMenuItem.Click += new System.EventHandler(this.listadoDeGastosToolStripMenuItem_Click);
             // 
             // iconInventario
             // 
@@ -410,7 +446,8 @@
             // 
             this.egresosToolStripMenuItem.Name = "egresosToolStripMenuItem";
             this.egresosToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
-            this.egresosToolStripMenuItem.Text = "Egresos";
+            this.egresosToolStripMenuItem.Text = "Gastos";
+            this.egresosToolStripMenuItem.Click += new System.EventHandler(this.egresosToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -474,6 +511,7 @@
             this.administradorDeUsuariosToolStripMenuItem.Name = "administradorDeUsuariosToolStripMenuItem";
             this.administradorDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
             this.administradorDeUsuariosToolStripMenuItem.Text = "Administrador de usuarios";
+            this.administradorDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administradorDeUsuariosToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -522,46 +560,24 @@
             // panelMenuSuperior
             // 
             this.panelMenuSuperior.BackColor = System.Drawing.Color.White;
-            this.panelMenuSuperior.Controls.Add(this.pictureBox1);
-            this.panelMenuSuperior.Controls.Add(this.label1);
             this.panelMenuSuperior.Controls.Add(this.toolStrip1);
             this.panelMenuSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelMenuSuperior.Name = "panelMenuSuperior";
-            this.panelMenuSuperior.Size = new System.Drawing.Size(727, 61);
+            this.panelMenuSuperior.Size = new System.Drawing.Size(1037, 42);
             this.panelMenuSuperior.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Sistema.UI.Properties.Resources.celularicon;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DR CELL";
             // 
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStrip1.Size = new System.Drawing.Size(727, 61);
+            this.toolStrip1.Size = new System.Drawing.Size(1037, 42);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -576,7 +592,7 @@
             this.toolStripButton1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.toolStripButton1.IconColor = System.Drawing.Color.Black;
             this.toolStripButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.toolStripButton1.IconSize = 40;
+            this.toolStripButton1.IconSize = 30;
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
@@ -607,7 +623,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(998, 594);
+            this.ClientSize = new System.Drawing.Size(1266, 629);
             this.Controls.Add(this.panelCentral);
             this.Controls.Add(this.panelMenuLateral);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -624,8 +640,6 @@
             this.toolMenu.ResumeLayout(false);
             this.toolMenu.PerformLayout();
             this.panelMenuSuperior.ResumeLayout(false);
-            this.panelMenuSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -637,11 +651,9 @@
         private System.Windows.Forms.Panel panelCentral;
         private System.Windows.Forms.Panel panelMenuSuperior;
         private FontAwesome.Sharp.IconButton btnInicio;
-        private FontAwesome.Sharp.IconButton btnCompras;
         private FontAwesome.Sharp.IconButton btnSalir;
         private FontAwesome.Sharp.IconButton btnReportes;
         private FontAwesome.Sharp.IconButton btnVentas;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private FontAwesome.Sharp.IconDropDownButton toolStripButton1;
@@ -678,8 +690,10 @@
         private FontAwesome.Sharp.IconToolStripButton iconSalir;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem listadoDeGastosToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private FontAwesome.Sharp.IconButton btnEgreso;
+        private FontAwesome.Sharp.IconButton btnProducto;
+        private Klik.Windows.Forms.v1.Common.KStyleManager kStyleManager1;
     }
 }
 

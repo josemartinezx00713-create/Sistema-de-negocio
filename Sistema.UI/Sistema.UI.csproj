@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,6 +62,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioBase\frmAgregarPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioBase\frmAgregarPlantilla.Designer.cs">
+      <DependentUpon>frmAgregarPlantilla.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioBase\frmPlantilla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +80,41 @@
     <Compile Include="Formularios\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarGastos.Designer.cs">
+      <DependentUpon>frmAgregarGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCatalogoGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCatalogoGasto.Designer.cs">
+      <DependentUpon>frmCatalogoGasto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmConexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmConexion.Designer.cs">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGastos.Designer.cs">
+      <DependentUpon>frmGastos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmMensajes.cs">
       <SubType>Form</SubType>
@@ -86,39 +122,59 @@
     <Compile Include="Formularios\frmMensajes.Designer.cs">
       <DependentUpon>frmMensajes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\MDIInterfazMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\MDIInterfazMenu.Designer.cs">
       <DependentUpon>MDIInterfazMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\MDIMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\MDIMenu.Designer.cs">
-      <DependentUpon>MDIMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modulos\ColoresUI.cs" />
     <Compile Include="Modulos\Mensajes.cs" />
+    <Compile Include="Modulos\mostrarModal.cs" />
+    <Compile Include="Modulos\Validaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioBase\frmAgregarPlantilla.resx">
+      <DependentUpon>frmAgregarPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioBase\frmPlantilla.resx">
       <DependentUpon>frmPlantilla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarGastos.resx">
+      <DependentUpon>frmAgregarGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCatalogoGasto.resx">
+      <DependentUpon>frmCatalogoGasto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConexion.resx">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGastos.resx">
+      <DependentUpon>frmGastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMensajes.resx">
       <DependentUpon>frmMensajes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIInterfazMenu.resx">
       <DependentUpon>MDIInterfazMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\MDIMenu.resx">
-      <DependentUpon>MDIMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -200,6 +256,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2025-08-28 at 9.12.10 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_error_501.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,7 +22,7 @@ namespace Sistema.UI.Formularios
 
             switch (tipo.ToLower())
             {
-                case"error":
+                case "error":
                     picIcono.Image = Properties.Resources.icon_error_50;
                     this.BackColor = Color.FromArgb(255, 77, 77); //rojo
                     break;
@@ -40,7 +40,7 @@ namespace Sistema.UI.Formularios
                     break;
                 case "confirmar":
                     picIcono.Image = Properties.Resources.icon_confirm_50;
-                    this.BackColor = Color.DarkSlateGray; //gris verdoso
+                    this.BackColor = Color.FromArgb(255, 44, 62, 80); //gris verdoso
                     break;
             }
         }

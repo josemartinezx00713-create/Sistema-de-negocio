@@ -1,41 +1,47 @@
-# Archivos de Visual Studio
+# CARPETAS Y ARCHIVOS TEMPORALES DE VISUAL STUDIO
 .vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+*.vsp
+*.vshost.*
+*.vsl
+*.dbmdl
+*.log
+*.vsidx
 
-# Compilados
+# ARCHIVOS DE COMPILACIÓN Y BINARIOS
+# Estos archivos se regeneran al compilar, no deben subirse.
+[Dd]ebug/
+[Rr]elease/
 bin/
 obj/
-Debug/
-Release/
-x64/
-x86/
-*.dll
 *.exe
 *.pdb
 *.cache
 
-# Configuración temporal
-*.log
-*.vsidx
-*.vshost.*
-*.dbmdl
 
-# Archivos de paquetes
+# ARCHIVOS DE PAQUETES Y DEPENDENCIAS (NuGet)
 packages/
 *.nupkg
-
-# Archivos de dependencias locales
 *.lock.json
+project.lock.json
 
-# Archivos de sistema
-Thumbs.db
-ehthumbs.db
+# EXCEPCIÓN PARA GUNA UI FRAMEWORK:
+# **¡IMPORTANTE!** Revisa que esta ruta coincida exactamente con la ubicación
+# de la carpeta donde tienes guardado Guna en tu repositorio local.
+
+!C:\UNI Trabajos y programas\DESARROLLO DE APLICACIONES 3ER AÑO\Proyecto\SistemaNegocio\Recursos\Recursos\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master/**
+
+# PERMITIR TODAS LAS DLLs DEL PROYECTO
+!**/*.dll
+!**/*x64/
+!**/*x86/
+
+# ARCHIVOS DEL SISTEMA OPERATIVO
+[Tt]humbs.db
+[Ee]hthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# Archivos de Guna UI (no los temporales, solo binarios generados)
-Guna_UI_Framework_Ultimate_v2.0.0.1/**/bin/
-Guna_UI_Framework_Ultimate_v2.0.0.1/**/obj/

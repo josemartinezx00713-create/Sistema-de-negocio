@@ -113,6 +113,16 @@ namespace Sistema.UI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_error_501 {
+            get {
+                object obj = ResourceManager.GetObject("icon_error_501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_info_50 {
             get {
                 object obj = ResourceManager.GetObject("icon_info_50", resourceCulture);

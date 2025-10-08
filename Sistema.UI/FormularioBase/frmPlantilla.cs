@@ -16,13 +16,5 @@ namespace Sistema.UI.FormularioBase
         {
             InitializeComponent();
         }
-
-        protected virtual void transferirDatosCajasTexto(DataGridViewCellEventArgs e)
-        {
-        }
-        private void iconCerrar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

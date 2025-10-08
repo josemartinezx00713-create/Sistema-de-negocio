@@ -65,7 +65,7 @@ namespace Sistema.DAL
         /// </summary>
         /// 
 
-        public static string ObtenerConexion()
+        public static SqlConnection ObtenerConexion()
         {
             var datosConexion = CargarDatosConexion();
 
@@ -76,7 +76,7 @@ namespace Sistema.DAL
             {
                 throw new Exception("La configuración de la conexión es incompleta.");
             }
-            return datosConexion.CadenaConexion;
+            return new SqlConnection(datosConexion.CadenaConexion);
         }
 
         /// <summary>
