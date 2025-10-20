@@ -231,7 +231,7 @@ namespace Sistema.UI.Formularios
         }
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new frmPlantilla(), true);
+            AbrirFormulario(new frmVenta(), true);
         }
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {

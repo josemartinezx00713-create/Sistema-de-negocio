@@ -83,7 +83,9 @@
             this.txtVar3.FocusedState.Parent = this.txtVar3;
             this.txtVar3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVar3.HoverState.Parent = this.txtVar3;
+            this.txtVar3.Location = new System.Drawing.Point(770, 297);
             this.txtVar3.ShadowDecoration.Parent = this.txtVar3;
+            this.txtVar3.Size = new System.Drawing.Size(243, 35);
             this.txtVar3.Visible = false;
             // 
             // txtVar2
