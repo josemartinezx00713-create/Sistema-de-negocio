@@ -1,5 +1,6 @@
 ﻿using Sistema.BLL;
 using Sistema.Entity;
+using Sistema.UI.FormularioBase;
 using Sistema.UI.Modulos;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ using static Guna.UI2.Native.WinApi;
 
 namespace Sistema.UI.Formularios
 {
-    public partial class frmAgregarUsuario : Form
+    public partial class frmAgregarUsuario : frmAgregarRegistros
     {
         private Mensajes mensajes = new Mensajes();
         public event Action registroAgregado;
@@ -27,7 +28,6 @@ namespace Sistema.UI.Formularios
             cboRoles.SelectedIndex = 0;
             
         }
-
 
         public frmAgregarUsuario(int id, string cedula, string nombre, string codigo, string email, int rol)
         {
@@ -44,8 +44,8 @@ namespace Sistema.UI.Formularios
                 txtEmail.Text = email;
                 rol = cboRoles.SelectedIndex;
                 txtClave.Visible = false;
-                label7.Visible = false;
-                label1.Text = "Actualizar usuario";
+                label9.Visible = false;
+                label6.Text = "  Editar un usuario";
 
                 actualizarRegistro = true;
 
@@ -56,7 +56,7 @@ namespace Sistema.UI.Formularios
             }
         }
 
-        #region metodos
+        #region Metodos
         private void errorControl(string control)
         {
             switch (control)
@@ -120,12 +120,7 @@ namespace Sistema.UI.Formularios
         }
         #endregion
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void btnAceptar_Click_1(object sender, EventArgs e)
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -195,6 +190,16 @@ namespace Sistema.UI.Formularios
             {
                 mensajes.mensajeError("Ocurrio un errror inesperado");
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
