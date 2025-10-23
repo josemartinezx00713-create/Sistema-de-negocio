@@ -110,6 +110,12 @@
     <Compile Include="Formularios\frmGastos.Designer.cs">
       <DependentUpon>frmGastos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmHistorialVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmHistorialVenta.Designer.cs">
+      <DependentUpon>frmHistorialVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmMensajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmGastos.resx">
       <DependentUpon>frmGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmHistorialVenta.resx">
+      <DependentUpon>frmHistorialVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMensajes.resx">
       <DependentUpon>frmMensajes.cs</DependentUpon>

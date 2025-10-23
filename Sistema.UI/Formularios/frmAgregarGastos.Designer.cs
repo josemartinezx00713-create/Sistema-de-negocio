@@ -54,13 +54,15 @@
             // 
             // label8
             // 
-            this.label8.Size = new System.Drawing.Size(96, 21);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Size = new System.Drawing.Size(117, 28);
             this.label8.Text = "Descripción";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(166, 79);
-            this.label6.Size = new System.Drawing.Size(301, 45);
+            this.label6.Location = new System.Drawing.Point(221, 97);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Size = new System.Drawing.Size(371, 54);
             this.label6.Text = "Registro de Gastos ";
             // 
             // cboCatalogo
@@ -107,12 +109,14 @@
             // 
             // label4
             // 
-            this.label4.Size = new System.Drawing.Size(60, 21);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Size = new System.Drawing.Size(73, 28);
             this.label4.Text = "Monto";
             // 
             // label3
             // 
-            this.label3.Size = new System.Drawing.Size(111, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Size = new System.Drawing.Size(137, 28);
             this.label3.Text = "Tipo de gasto";
             // 
             // dtpFecha
@@ -152,10 +156,11 @@
             // 
             // frmAgregarGastos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(650, 600);
+            this.ClientSize = new System.Drawing.Size(867, 738);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmAgregarGastos";
             this.Load += new System.EventHandler(this.frmAgregarGastos_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

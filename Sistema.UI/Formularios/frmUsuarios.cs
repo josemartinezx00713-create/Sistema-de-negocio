@@ -71,7 +71,7 @@ namespace Sistema.UI.Formularios
         {
             try
             {
-                string nombre = dgvListado.Rows[2].Cells["USUARIO"].Value?.ToString();
+                string nombre = dgvListado.Rows[fila].Cells["USUARIO"].Value?.ToString();
                 if (mensaje.mensajeConfirmar("¿Seguro que desea eliminar el usuario " + nombre + "?") == DialogResult.OK)
                 {
                     int id = Convert.ToInt32(dgvListado.Rows[fila].Cells["ID"].Value);
@@ -152,6 +152,16 @@ namespace Sistema.UI.Formularios
             {
                 mensaje.mensajeError("Error al buscar registros.");
             }
+        }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
