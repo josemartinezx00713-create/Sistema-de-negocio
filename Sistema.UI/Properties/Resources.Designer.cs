@@ -143,6 +143,16 @@ namespace Sistema.UI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_mas_481 {
+            get {
+                object obj = ResourceManager.GetObject("icon_mas_481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_ok_50 {
             get {
                 object obj = ResourceManager.GetObject("icon_ok_50", resourceCulture);

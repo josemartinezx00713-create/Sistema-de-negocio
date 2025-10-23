@@ -75,9 +75,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dCategoria.cs" />
     <Compile Include="dCuentasGasto.cs" />
     <Compile Include="dGasto.cs" />
+<<<<<<< HEAD
     <Compile Include="dProducto.cs" />
+=======
+    <Compile Include="dProductos.cs" />
+>>>>>>> origin/henry
     <Compile Include="dUsuario.cs" />
     <Compile Include="dVenta.cs" />
     <Compile Include="GestorConexion.cs" />

@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="DataTable.cs" />
     <Compile Include="DatosConexion.cs" />
+    <Compile Include="oCategoria.cs" />
     <Compile Include="oCuentasGasto.cs" />
     <Compile Include="oDetalleVenta.cs" />
     <Compile Include="oGasto.cs" />
+    <Compile Include="oProductos.cs" />
     <Compile Include="oUsuario.cs" />
     <Compile Include="oVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

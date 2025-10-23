@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bCategoria.cs" />
     <Compile Include="bCuentasGasto.cs" />
     <Compile Include="bGasto.cs" />
+<<<<<<< HEAD
     <Compile Include="bProducto.cs" />
+=======
+    <Compile Include="bProductos.cs" />
+>>>>>>> origin/henry
     <Compile Include="bUsuario.cs" />
     <Compile Include="bVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
