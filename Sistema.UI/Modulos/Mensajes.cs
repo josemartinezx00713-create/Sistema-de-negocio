@@ -34,5 +34,15 @@ namespace Sistema.UI.Modulos
             frmMensajes frm = new frmMensajes(mensaje, "confirmar");
             return frm.ShowDialog();
         }
+
+        internal void mensajeOk(bool resultado)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void mensajeError(object mensaje)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

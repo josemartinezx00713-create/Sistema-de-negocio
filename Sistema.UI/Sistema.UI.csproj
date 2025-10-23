@@ -148,6 +148,7 @@
     <Compile Include="Modulos\Mensajes.cs" />
     <Compile Include="Modulos\mostrarModal.cs" />
     <Compile Include="Modulos\Validaciones.cs" />
+    <Compile Include="Modulos\Variables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioBase\frmAgregarRegistros.resx">

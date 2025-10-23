@@ -45,6 +45,7 @@
     <Compile Include="bGasto.cs" />
     <Compile Include="bProducto.cs" />
     <Compile Include="bUsuario.cs" />
+    <Compile Include="bVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

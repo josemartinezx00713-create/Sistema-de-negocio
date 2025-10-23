@@ -1,4 +1,5 @@
 ﻿using Sistema.BLL;
+using Sistema.Entity;
 using Sistema.Modulos;
 using Sistema.UI.FormularioBase;
 using Sistema.UI.Modulos;
@@ -61,6 +62,11 @@ namespace Sistema.UI.Formularios
 
             // Ajustar ancho específico para precio de venta
             dgvProductos.Columns[4].FillWeight = 70;
+            dgvProductos.Columns[1].Width = 80;
+            //dgvProductos.Columns[2].Width = 200;
+            //dgvProductos.Columns[3].Width = 100;
+            dgvProductos.Columns["PRODUCTO"].Width = 181;
+            dgvProductos.Columns["STOCK"].Width = 75;
 
             // Formato decimal
             dgvProductos.Columns["P_VENTA"].DefaultCellStyle.Format = "N2";
@@ -70,6 +76,8 @@ namespace Sistema.UI.Formularios
 
             // Alinear precios
             dgvProductos.Columns["P_VENTA"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dgvProductos.Columns["P_VENTA"].HeaderText = "PRECIO";
+
         }
 
         private void crearTabla()
@@ -106,7 +114,7 @@ namespace Sistema.UI.Formularios
             dgvDetalle.Columns[7].Visible = false;
 
             dgvDetalle.Columns["precioVenta"].DefaultCellStyle.Format = "N2";
-
+            
             // Desactivar el autosize solo para la columna de nombreProducto
             dgvDetalle.Columns["nombreProducto"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
 
@@ -118,6 +126,7 @@ namespace Sistema.UI.Formularios
             dgvDetalle.Columns["precioVenta"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
             dgvDetalle.Columns[2].ReadOnly = true;
+            dgvDetalle.Columns[4].ReadOnly = true;
         }
 
         private void ajustarColumnas()
@@ -133,8 +142,8 @@ namespace Sistema.UI.Formularios
                 int anchoDisponible = dgvDetalle.ClientSize.Width;
 
                 // Anchos fijos para CANT y PRECIO
-                int anchoCant = 65;
-                int anchoPrecio = 120;
+                int anchoCant = 85;
+                int anchoPrecio = 150;
 
                 // Ancho para la columna PRODUCTO
                 int anchoProducto = anchoDisponible - (anchoCant + anchoPrecio + 20);
@@ -262,6 +271,39 @@ namespace Sistema.UI.Formularios
             }
         }
 
+        private DataTable ConstruirDetalleVentaDesdeGrid(DataGridView dgvDetalle)
+        {
+            var dt = new DataTable();
+            dt.Columns.Add("idProducto", typeof(int));
+            dt.Columns.Add("nombreProducto", typeof(string));
+            dt.Columns.Add("cant", typeof(int));
+            //dt.Columns.Add("precioCosto", typeof(decimal));
+            dt.Columns.Add("precioVenta", typeof(decimal));
+            //dt.Columns.Add("totalVenta", typeof(decimal));
+            //dt.Columns.Add("costoVenta", typeof(decimal));
+            //dt.Columns.Add("utilidadBruta", typeof(decimal));
+
+            foreach (DataGridViewRow row in dgvDetalle.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    dt.Rows.Add(
+                        Convert.ToInt32(row.Cells["idProducto"].Value),
+                        Convert.ToString(row.Cells["nombreProducto"].Value),
+                        Convert.ToInt32(row.Cells["cant"].Value),
+                        //Convert.ToDecimal(row.Cells["precioCosto"].Value),
+                        Convert.ToDecimal(row.Cells["precioVenta"].Value)
+                        //Convert.ToDecimal(row.Cells["totalVenta"].Value)
+                    //Convert.ToDecimal(row.Cells["costoVenta"].Value),
+                    //Convert.ToDecimal(row.Cells["utilidadBruta"].Value)
+                    );
+                }
+            }
+            return dt;
+        }
+
+
+
         #endregion
 
         #region Eventos del formulario
@@ -335,9 +377,46 @@ namespace Sistema.UI.Formularios
 
                 string cliente = txtCliente.Text.Trim();
 
-                if (mensaje.mensajeConfirmar("¿Desea registrar esta venta?") == DialogResult.Yes)
+                // CONSTRUYE DataTable detalleVenta desde tu DataGridView
+                DataTable detalleVenta = ConstruirDetalleVentaDesdeGrid(dgvDetalle); // Implementa este método
+
+                if (mensaje.mensajeConfirmar("¿Desea registrar esta venta?") != DialogResult.Yes)
                 {
-                    //GuardarVenta(Variables.idUsuario, fechaVenta, cliente, totalVenta, costoVenta, detalleVenta);
+                    if (Variables.terminarVenta != 1)
+                    {
+                        oVenta venta = new oVenta()
+                        {
+                            IdUsuario = Variables.idUsuario,
+                            Fecha = fechaVenta,
+                            Cliente = cliente,
+                            TotalVenta = totalVenta,
+                            CostoTotal = costoVenta,
+                            Detalles = detalleVenta
+                        };
+
+                        var resultado = bVenta.registrarVenta(venta);
+
+                        if (!resultado.esValido)
+                        {
+                            mensaje.mensajeOk(resultado.mensaje);
+                            return;
+                        }
+                        mensaje.mensajeOk(resultado.mensaje);
+                        Variables.numeroFactura = resultado.numeroFactura;
+
+
+                        bloquearControles();
+
+                        Variables.montoEfectivo = 0;
+                        Variables.montoTarjeta = 0;
+                        Variables.cambio = 0;
+                    }
+                }
+                
+                else
+                {
+                    return;
+                    
                 }
             }
 

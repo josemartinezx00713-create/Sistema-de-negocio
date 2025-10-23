@@ -79,6 +79,7 @@
     <Compile Include="dGasto.cs" />
     <Compile Include="dProducto.cs" />
     <Compile Include="dUsuario.cs" />
+    <Compile Include="dVenta.cs" />
     <Compile Include="GestorConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

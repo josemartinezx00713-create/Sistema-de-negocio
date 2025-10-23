@@ -42,13 +42,8 @@
             this.panelCentral = new System.Windows.Forms.Panel();
             this.toolMenu = new System.Windows.Forms.ToolStrip();
             this.iconVentas = new FontAwesome.Sharp.IconDropDownButton();
-            this.aperturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cerrarCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cierreDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconCatalogo = new FontAwesome.Sharp.IconDropDownButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.listadoDeCategoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,8 +61,6 @@
             this.iconSeguridad = new FontAwesome.Sharp.IconDropDownButton();
             this.administradorDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.editarDatosDeLaEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.conexiónALaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupDeLaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconSalir = new FontAwesome.Sharp.IconToolStripButton();
@@ -301,13 +294,8 @@
             // 
             this.iconVentas.AutoSize = false;
             this.iconVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aperturaToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cerrarCajaToolStripMenuItem,
             this.ventasToolStripMenuItem,
-            this.historialDeVentasToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.cierreDeCajaToolStripMenuItem});
+            this.historialDeVentasToolStripMenuItem});
             this.iconVentas.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconVentas.IconChar = FontAwesome.Sharp.IconChar.DollyFlatbed;
@@ -320,23 +308,6 @@
             this.iconVentas.Size = new System.Drawing.Size(160, 35);
             this.iconVentas.Text = "Ventas";
             // 
-            // aperturaToolStripMenuItem
-            // 
-            this.aperturaToolStripMenuItem.Name = "aperturaToolStripMenuItem";
-            this.aperturaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
-            this.aperturaToolStripMenuItem.Text = "Apertura de caja";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
-            // 
-            // cerrarCajaToolStripMenuItem
-            // 
-            this.cerrarCajaToolStripMenuItem.Name = "cerrarCajaToolStripMenuItem";
-            this.cerrarCajaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
-            this.cerrarCajaToolStripMenuItem.Text = "Cerrar caja";
-            // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
@@ -348,17 +319,6 @@
             this.historialDeVentasToolStripMenuItem.Name = "historialDeVentasToolStripMenuItem";
             this.historialDeVentasToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.historialDeVentasToolStripMenuItem.Text = "Historial de ventas";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
-            // 
-            // cierreDeCajaToolStripMenuItem
-            // 
-            this.cierreDeCajaToolStripMenuItem.Name = "cierreDeCajaToolStripMenuItem";
-            this.cierreDeCajaToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
-            this.cierreDeCajaToolStripMenuItem.Text = "Cierre de caja";
             // 
             // iconCatalogo
             // 
@@ -490,8 +450,6 @@
             this.iconSeguridad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administradorDeUsuariosToolStripMenuItem,
             this.toolStripSeparator8,
-            this.editarDatosDeLaEmpresaToolStripMenuItem,
-            this.toolStripSeparator9,
             this.conexiónALaBaseDeDatosToolStripMenuItem,
             this.backupDeLaBaseDeDatosToolStripMenuItem});
             this.iconSeguridad.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -517,17 +475,6 @@
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(265, 6);
-            // 
-            // editarDatosDeLaEmpresaToolStripMenuItem
-            // 
-            this.editarDatosDeLaEmpresaToolStripMenuItem.Name = "editarDatosDeLaEmpresaToolStripMenuItem";
-            this.editarDatosDeLaEmpresaToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
-            this.editarDatosDeLaEmpresaToolStripMenuItem.Text = "Editar datos de la empresa";
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(265, 6);
             // 
             // conexiónALaBaseDeDatosToolStripMenuItem
             // 
@@ -661,13 +608,8 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolMenu;
         private FontAwesome.Sharp.IconDropDownButton iconVentas;
-        private System.Windows.Forms.ToolStripMenuItem aperturaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cerrarCajaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDeVentasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem cierreDeCajaToolStripMenuItem;
         private FontAwesome.Sharp.IconDropDownButton iconCatalogo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem listadoDeCategoríasToolStripMenuItem;
@@ -683,8 +625,6 @@
         private FontAwesome.Sharp.IconDropDownButton iconSeguridad;
         private System.Windows.Forms.ToolStripMenuItem administradorDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
-        private System.Windows.Forms.ToolStripMenuItem editarDatosDeLaEmpresaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem conexiónALaBaseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupDeLaBaseDeDatosToolStripMenuItem;
         private FontAwesome.Sharp.IconToolStripButton iconSalir;
