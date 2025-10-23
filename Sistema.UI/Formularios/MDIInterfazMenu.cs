@@ -274,5 +274,21 @@ namespace Sistema.UI.Formularios
         {
             AbrirFormulario(new frmGastos(), true);
         }
+
+        private void btnProducto_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmProductos(), true);
+        }
+
+        private void listadoDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmProductos(), true);
+        }
+
+        private void listadoDeCategoríasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCategoria frm = new frmCategoria();
+            mostrarModal.MostrarConCapaTransparente(this, frm);
+        }
     }
 }

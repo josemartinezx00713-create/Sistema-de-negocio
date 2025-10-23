@@ -86,6 +86,12 @@
     <Compile Include="Formularios\frmAgregarGastos.Designer.cs">
       <DependentUpon>frmAgregarGastos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmAgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarProducto.Designer.cs">
+      <DependentUpon>frmAgregarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmAgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Formularios\frmCatalogoGasto.Designer.cs">
       <DependentUpon>frmCatalogoGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmConexion.cs">
       <SubType>Form</SubType>
@@ -115,6 +127,12 @@
     </Compile>
     <Compile Include="Formularios\frmMensajes.Designer.cs">
       <DependentUpon>frmMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmUsuarios.cs">
       <SubType>Form</SubType>
@@ -146,11 +164,17 @@
     <EmbeddedResource Include="Formularios\frmAgregarGastos.resx">
       <DependentUpon>frmAgregarGastos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarProducto.resx">
+      <DependentUpon>frmAgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAgregarUsuario.resx">
       <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCatalogoGasto.resx">
       <DependentUpon>frmCatalogoGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConexion.resx">
       <DependentUpon>frmConexion.cs</DependentUpon>
@@ -160,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMensajes.resx">
       <DependentUpon>frmMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
@@ -250,6 +277,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_error_501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_mas_481.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
